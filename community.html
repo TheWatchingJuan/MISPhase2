@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Community | St. Regis Apartments</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+        <div class="flex justify-between items-center px-6 md:px-12 py-3 max-w-full mx-auto">
+            <a href="index.html">
+                <img alt="St. Regis Apartments Logo" class="h-8 md:h-12 w-auto object-contain block"
+                    src="images/logo.png">
+            </a>
+            <div class="hidden md:flex space-x-10 font-label text-sm uppercase tracking-[0.15em]">
+                <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+                    href="index.html">Home</a>
+                <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+                    href="gallery.html">Gallery</a>
+                <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+                    href="details.html">Apartments</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="community.html">Community</a>
+            </div>
+            <div class="flex items-center gap-2 md:gap-4">
+                <button type="button" onclick="openModal()"
+                    class="bg-primary text-on-primary px-4 md:px-6 py-2 rounded-lg font-bold text-xs md:text-sm uppercase tracking-widest hover:shadow-lg transition-all duration-300 active:scale-95">
+                    Book a Tour
+                </button>
+                <button type="button" aria-expanded="false" aria-label="Toggle mobile menu"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+                    class="md:hidden text-primary p-2 hover:bg-surface-container rounded-lg transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-surface border-t border-primary/10 shadow-2xl font-label text-sm uppercase tracking-[0.15em] flex flex-col">
+            <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+                href="index.html">Home</a>
+            <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+                href="gallery.html">Gallery</a>
+            <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+                href="details.html">Apartments</a>
+            <a class="text-primary font-bold bg-primary/5 p-4 pl-6 block" href="community.html">Community</a>
+        </div>
+    </nav>
+    <main class="pt-24">
+        <!-- Hero Section: Community Essence -->
+        <section class="px-6 md:px-12 py-16 md:py-24 bg-surface">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6">
+                    <span
+                        class="font-label text-xs uppercase tracking-[0.3em] text-secondary font-bold mb-6 block"><br /></span>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-primary leading-[1.1] mb-8 text-balance">
+                        Building Charm in Downtown.</h1>
+                    <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">At St. Regis
+                        Apartments, we believe in a friendly tenant community, supporting residents from all walks of
+                        life. We work to support Duluth's vibrant community through responsive owner management. Our
+                        charming units are home to many, including students from UMD, Essentia Healthcare workers, and
+                        others looking to experience life from the heart of Duluth.</p>
+                </div>
+                <div class="lg:col-span-6 relative"><span
+                        class="absolute top-4 left-8 text-[10px] text-white/60 font-medium uppercase tracking-wider">Photo
+                        by Andrew Ling on Unsplash</span>
+                    <img alt="Aerial Lift Bridge"
+                        class="rounded-xl w-full h-[500px] md:h-[650px] object-cover shadow-2xl"
+                        src="images/liftbridge.jpg" />
+                </div>
+            </div>
+        </section>
+        <!-- Bento Grid: Nearby Highlights -->
+        <section class="px-6 md:px-12 py-24 bg-surface-container-low">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Nearby Highlights</h2>
+                <div class="h-1.5 w-24 bg-primary mb-6"></div>
+                <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">Located in the heart of downtown,
+                    our community is just a short drive or scenic walk from the iconic Canal Park waterfront.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Dominos / Immediate Neighborhood -->
+                <div
+                    class="md:col-span-2 bg-surface p-10 rounded-xl flex flex-col justify-between border border-outline-variant shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div>
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">local_pizza</span>
+                        <h3 class="text-2xl font-bold mb-4">Steps from the Block</h3>
+                        <p class="text-on-surface-variant mb-8 text-lg">Convenience at your doorstep. Domino's is right
+                            on the same block, ensuring late-night study sessions or quick dinners are always within
+                            reach. Many more restaurants and shops are within walking distance!</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span
+                            class="px-5 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-[10px] font-bold uppercase tracking-widest">Convenience</span>
+                        <span
+                            class="px-5 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-[10px] font-bold uppercase tracking-widest">Local
+                            Eats</span>
+                    </div>
+                </div>
+                <!-- Canal Park -->
+                <div class="md:col-span-1 group relative overflow-hidden rounded-xl h-[450px]">
+                    <img alt="Canal Park View"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        src="images/canalpark5.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+                        <span
+                            class="absolute top-4 left-8 text-[10px] text-white/60 font-medium uppercase tracking-wider">Photo
+                            by Aayush Sigdel on Unsplash</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Canal Park</h3>
+                        <p class="text-white/90 text-sm leading-relaxed">Lakefront leisure and tourist charm, just a
+                            short stroll away.</p>
+                    </div>
+                </div>
+                <!-- Essentia Hospital -->
+                <div class="md:col-span-1 group relative overflow-hidden rounded-xl h-[450px]">
+                    <img alt="Essentia Hospital"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        src="images/Essentia.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold text-white mb-2">Essentia Hospital</h3>
+                        <p class="text-white/90 text-sm leading-relaxed">An ideal residence for healthcare
+                            professionals seeking proximity to work.</p>
+                    </div>
+                </div>
+                <!-- Transport / Bus Line -->
+                <div class="md:col-span-1 bg-primary text-on-primary p-10 rounded-xl shadow-lg">
+                    <span
+                        class="material-symbols-outlined text-primary-fixed text-5xl mb-6 opacity-80">directions_bus</span>
+                    <h3 class="text-2xl font-bold mb-4">Direct to UMD</h3>
+                    <p class="text-on-primary/80 leading-relaxed mb-8">Located on the local bus line, providing seamless
+                        access for students and faculty.</p>
+                    <div class="text-[10px] uppercase tracking-[0.2em] font-bold border-t border-on-primary/20 pt-6">
+                        Reliable Transit</div>
+                </div>
+                <!-- Owls Club & YMCA -->
+                <div
+                    class="md:col-span-2 bg-surface p-10 rounded-xl grid grid-cols-1 sm:grid-cols-2 gap-10 border border-outline-variant">
+                    <div class="sm:border-r border-outline-variant/50 sm:pr-10">
+                        <h3 class="text-lg font-bold text-primary mb-3">Owls Club</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Traditional social gathering space
+                            for community networking and historic local connections.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-primary mb-3">YMCA</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Comprehensive fitness and recreation
+                            facilities within a convenient walking distance.</p>
+                    </div>
+                </div>
+                <!-- Map Stub -->
+                <div
+                    class="md:col-span-1 rounded-xl overflow-hidden relative border border-outline-variant min-h-[300px] shadow-sm">
+                    <iframe src="https://maps.google.com/maps?q=125+N+2nd+Ave+E,+Duluth,+MN+55805&output=embed"
+                        class="absolute inset-0 w-full h-full border-0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Focus Section: Outdoors -->
+        <section
+            class="px-6 md:px-12 py-32 flex flex-col md:flex-row gap-16 md:gap-24 items-center overflow-hidden bg-surface">
+            <div class="flex-1 order-2 md:order-1 relative"><img alt="Waterfall in Duluth"
+                    class="rounded-xl w-full h-[400px] md:h-[600px] object-cover shadow-2xl transition-transform duration-700 hover:scale-[1.02]"
+                    src="images/waterfall.jpg" /></div>
+            <div class="flex-1 order-1 md:order-2">
+                <span
+                    class="font-label text-xs uppercase tracking-[0.3em] text-secondary font-bold mb-4 block"><br /></span>
+                <h2 class="text-4xl md:text-6xl font-bold text-primary mb-8 leading-tight">Embrace the Outdoors</h2>
+                <p class="text-lg text-on-surface-variant mb-10 leading-relaxed max-w-xl">Located at the beginning of
+                    the north shore, Duluth is surrounded by natural wonders. With dozens of parks surrounding the area,
+                    this location offers hundreds of opportunities to see the outdoors. From leisurely strolls, to agate
+                    hunting along Lake Superior's beaches, you will find the perfect activity for any occasion.</p>
+                <a href="https://visitduluth.com/experience/adventure/parks-trails/city-parks/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-4 text-primary font-bold tracking-widest uppercase text-sm group cursor-pointer hover:opacity-80 transition-opacity">
+                    <span>Discover Local Parks</span>
+                    <span
+                        class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </a>
+            </div>
+        </section>
+        <!-- Management Callout -->
+        <section
+            class="mx-6 md:mx-12 mb-32 p-10 md:p-20 rounded-xl text-white relative overflow-hidden shadow-2xl bg-primary">
+            <div class="relative z-10 max-w-3xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Experience Attentive Management</h2>
+                <p class="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">Unlike corporate-owned properties, St.
+                    Regis Apartments is responsive and owner-managed. We care about the details because we care about
+                    the charm of our building and the comfort of our tenants.</p>
+                <button
+                    class="bg-surface text-primary px-10 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-surface-container-high transition-all hover:shadow-xl active:scale-95">
+                    Connect with Management
+                </button>
+            </div>
+            <div class="absolute right-0 top-0 h-full w-full lg:w-1/2 opacity-10 pointer-events-none">
+                <img alt="Management Office" class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeCxPt_fCUsEpVhPNo1N_s8p0JsN8zHG23R2AgzddMsIdHUB-uLw8vJkqEweerbkWTgrPeYlyCO4xd-eRIXkUGIrn-eIUJsBp6am0aTb7DTAop1637ti55YryTva9t8xXOkelHrJw8Ac_cxgpA82SX2Af8FTnjSscyzqkfGV0nftCDQwGT5yjHsSjLxf2Su2snZ9TJ9CuwAS9w8koeYee065T72XdY4bwPEI1fRR3PdtyQFCewvlTaI2I92FtenWGdZb6933Rxfvo" />
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-[#fbf2e9] w-full py-20 px-12 border-t border-primary/10 flex flex-col md:flex-row md:justify-evenly items-start gap-16 md:gap-0">
+        <div class="flex flex-col h-full justify-start">
+            <div class="mb-4">
+                <img alt="St. Regis Apartments Logo" class="h-32 md:h-40 w-auto object-contain" src="images/logo.png">
+            </div>
+            <p class="text-[#3c2b18] font-body text-[10px] uppercase tracking-[0.2em] md:pl-20">© 2026 St. Regis
+                Apartments LLC. All
+                rights reserved.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h3 class="text-[#003629] font-headline font-bold text-lg uppercase tracking-widest mb-4">Contact Us</h3>
+            <div class="flex flex-col gap-6 mt-2">
+                <div class="space-y-1">
+                    <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Administrative</p>
+                    <p class="text-[#3c2b18] font-body text-sm leading-snug">Ted Ringsred — (612) 203-3604<br><a
+                            class="hover:text-primary transition-colors"
+                            href="mailto:ring900@gmail.com">ring900@gmail.com</a></p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">On-Site Manager</p>
+                    <p class="text-[#3c2b18] font-body text-sm leading-snug">Fox Ringsred — (612) 666-5962<br><a
+                            class="hover:text-primary transition-colors"
+                            href="mailto:foxringsred@gmail.com">foxringsred@gmail.com</a>
+                    </p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Emergency Contact</p>
+                    <p class="text-[#3c2b18] font-body text-sm leading-relaxed">Chris Ringsred — (218) 461-2100<br>Miles
+                        Ringsred
+                        — (218) 340-3699</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col h-full justify-start items-start">
+            <div class="flex flex-col items-center gap-6">
+                <a class="inline-block border-2 border-[#003629] text-[#003629] px-6 py-2 rounded-lg font-body font-bold text-sm uppercase tracking-widest hover:bg-[#003629] hover:text-white transition-all duration-300"
+                    href="https://renter.turbotenant.com/auth/login">TurboTenant Portal</a>
+                <a class="font-['Manrope'] text-sm uppercase tracking-widest text-[#3c2b18] hover:opacity-100 opacity-80 transition-opacity duration-300"
+                    href="portal.html">Management portal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tour Modal -->
+    <div id="tour-modal"
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+        <div
+            class="bg-surface p-8 max-w-md w-full mx-4 rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300 relative border border-primary/10">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-headline font-bold text-primary">Get Started</h3>
+                <button onclick="closeModal()"
+                    class="text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-surface-container">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed mb-8">To be considered, to get more information or to
+                schedule a tour, please fill out this short pre-screener:</p>
+            <a href="https://forms.gle/QoNVbK6SuK7XQsgN8" target="_blank" onclick="closeModal()"
+                class="block w-full text-center bg-primary text-on-primary py-4 rounded-lg font-bold hover:bg-primary-container transition-all shadow-md active:scale-95">
+                Open Pre-Screener
+            </a>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

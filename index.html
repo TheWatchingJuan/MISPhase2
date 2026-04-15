@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home | St. Regis Apartments</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+  <nav class="fixed top-0 w-full z-50 bg-[#fff8f3]/90 backdrop-blur-md">
+    <div class="flex justify-between items-center px-6 md:px-12 py-3 max-w-full mx-auto">
+      <a href="index.html">
+        <img alt="St. Regis Apartments Logo" class="h-8 md:h-12 w-auto object-contain block" src="images/logo.png">
+      </a>
+      <div class="hidden md:flex space-x-10 font-label text-sm uppercase tracking-[0.15em]">
+        <a class="text-primary border-b-2 border-primary pb-1" href="index.html">Home</a>
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="gallery.html">Gallery</a>
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="details.html">Apartments</a>
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="community.html">Community</a>
+      </div>
+      <div class="flex items-center gap-2 md:gap-4">
+        <button type="button" onclick="openModal()"
+          class="bg-primary text-on-primary px-4 md:px-6 py-2 rounded-lg font-bold text-xs md:text-sm uppercase tracking-widest hover:shadow-lg transition-all duration-300 active:scale-95">
+          Book a Tour
+        </button>
+        <button type="button" aria-expanded="false" aria-label="Toggle mobile menu"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+          class="md:hidden text-primary p-2 hover:bg-surface-container rounded-lg transition-colors">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-[#fff8f3] border-t border-primary/10 shadow-2xl font-label text-sm uppercase tracking-[0.15em] flex flex-col">
+      <a class="text-primary font-bold bg-primary/5 p-4 border-b border-primary/5 pl-6 block" href="index.html">Home</a>
+      <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="gallery.html">Gallery</a>
+      <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="details.html">Apartments</a>
+      <a class="text-on-surface-variant font-semibold p-4 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="community.html">Community</a>
+    </div>
+  </nav>
+  <main class="pt-12">
+    <!-- Hero Section -->
+    <section class="relative px-12 pt-8 pb-20 flex flex-col md:flex-row items-center gap-16 overflow-hidden">
+      <div class="flex-1 z-10 flex justify-center">
+        <div class="max-w-lg">
+          <a href="https://maps.google.com/?q=125+N+2nd+Ave+E,+Duluth,+MN+55805" target="_blank"
+            rel="noopener noreferrer"
+            class="block font-label uppercase tracking-[0.2em] text-secondary text-2xl font-bold mb-12 mt-12 hover:text-primary transition-colors duration-300">
+            125 N 2nd AVE E, Duluth, MN
+          </a>
+          <h1 class="text-6xl md:text-7xl font-bold text-primary leading-[1.1] mb-8 tracking-tight">Historic Charm at
+            Great Prices!</h1>
+          <p class="text-lg text-on-surface-variant max-w-md mb-10 leading-relaxed">
+            Newly renovated 3 bedroom units provide 850 sq ft with a flexible lease length. Conveniently located in the
+            heart of downtown Duluth by a public transit route to UMD, Essentia Hospital, many restaurants and much
+            more!
+            Parking available. Laundry room in basement soon to be available.</p>
+          <div class="flex flex-wrap gap-4">
+            <button onclick="window.location.href='gallery.html'"
+              class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold hover:bg-primary-container transition-all">
+              View Gallery
+            </button>
+            <button onclick="window.location.href='details.html'"
+              class="border border-outline-variant/20 text-primary px-8 py-4 rounded-lg font-bold hover:bg-surface-container-low transition-all">
+              Cost &amp; Requirements
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 relative">
+        <div
+          class="w-full bg-surface-container-highest rounded-xl overflow-hidden shadow-sm transition-transform duration-700">
+          <img alt="Straight-on front view of the historic St. Regis Apartments building"
+            class="w-full h-auto object-cover" src="images/home.jpg">
+        </div>
+        <div
+          class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-xl max-w-xs border border-surface-container">
+          <div class="flex items-center gap-4 mb-2">
+            <span class="material-symbols-outlined text-primary text-3xl">key</span>
+            <span class="text-2xl font-bold text-primary">3&nbsp;Available&nbsp;</span>
+          </div>
+          <p class="text-sm text-secondary font-medium uppercase tracking-wider">Soon to be available units</p>
+        </div>
+      </div>
+    </section>
+    <!-- Stats & Features Bento Grid -->
+    <section class="px-12 py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Unit Count -->
+          <div class="md:col-span-2 bg-surface p-12 rounded-xl flex flex-col justify-between min-h-[320px]">
+            <div>
+              <span class="material-symbols-outlined text-primary-container text-4xl mb-6">domain</span>
+              <h2 class="text-4xl font-bold text-primary mb-4">18 Spacious Units</h2>
+              <p class="text-on-surface-variant text-lg">Charming 3-bedroom residences that honor the building's
+                historical footprint while providing ample space for an affordable price at St. Regis Apartments.</p>
+            </div>
+            <div class="flex gap-4 mt-8">
+              <span
+                class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">3
+                BR Layouts</span>
+              <span
+                class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">850&nbsp;SQ
+                FT</span>
+            </div>
+          </div>
+          <!-- Highlight Card -->
+          <div class="bg-primary text-on-primary p-12 rounded-xl flex flex-col justify-center items-center text-center">
+            <span class="text-6xl font-bold mb-2">3</span>
+            <p class="text-xl font-headline italic mb-6">Units Available Soon</p>
+            <hr class="w-12 border-on-primary/20 mb-6">
+            <p class="text-sm opacity-80 uppercase tracking-widest">Contact US for early access tours</p>
+          </div>
+          <!-- Modern Living -->
+          <div class="bg-surface-container-highest p-10 rounded-xl flex flex-col gap-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">bolt</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary">Amenities</h3>
+            </div>
+            <p class="text-on-surface-variant">Complimentary Wifi, Dumpster, and all of the typical utilities you need.
+              Laundry room soon to be available!</p>
+          </div>
+          <!-- Historic Charm -->
+          <div class="bg-surface-container-highest p-10 rounded-xl flex flex-col gap-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">verified_user</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary">Secure Living</h3>
+            </div>
+            <p class="text-on-surface-variant">Personal code keypad locks on the building entrance and your front door
+              ensure maximum security with no pesky keys!</p>
+          </div>
+          <!-- Professional Management -->
+          <div class="bg-surface-container-highest p-10 rounded-xl flex flex-col gap-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">history_edu</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary">Responsive Owners</h3>
+            </div>
+            <p class="text-on-surface-variant">On-site management and swift maintenance sets us apart from many
+              cold-hearted property management companies!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="px-12 py-32 flex flex-col items-center text-center">
+      <h2 class="text-5xl font-bold text-primary mb-8 max-w-2xl">Secure Your Place at St. Regis</h2>
+      <p class="text-on-surface-variant text-lg max-w-xl mb-12">
+        Join a friendly community of all walks of life and live in comfort and security! To be considered and to get
+        more information please fill out the very short pre-screener linked below.</p>
+      <div class="flex flex-col sm:flex-row gap-6">
+        <button
+          class="bg-primary text-on-primary px-12 py-5 rounded-lg font-bold text-lg hover:bg-primary-container transition-all flex items-center gap-2">
+          Contact Us
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="bg-[#fbf2e9] w-full py-20 px-12 border-t border-primary/10 flex flex-col md:flex-row md:justify-evenly items-start gap-16 md:gap-0">
+    <div class="flex flex-col h-full justify-start">
+      <div class="mb-4">
+        <img alt="St. Regis Apartments Logo" class="h-32 md:h-40 w-auto object-contain" src="images/logo.png">
+      </div>
+      <p class="text-[#3c2b18] font-body text-[10px] uppercase tracking-[0.2em] md:pl-20">© 2026 St. Regis Apartments
+        LLC. All
+        rights reserved.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h3 class="text-[#003629] font-headline font-bold text-lg uppercase tracking-widest mb-4">Contact Us</h3>
+      <div class="flex flex-col gap-6 mt-2">
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Administrative</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-snug">Ted Ringsred — (612) 203-3604<br><a
+              class="hover:text-primary transition-colors" href="mailto:ring900@gmail.com">ring900@gmail.com</a></p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">On-Site Manager</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-snug">Fox Ringsred — (612) 666-5962<br><a
+              class="hover:text-primary transition-colors" href="mailto:foxringsred@gmail.com">foxringsred@gmail.com</a>
+          </p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Emergency Contact</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-relaxed">Chris Ringsred — (218) 461-2100<br>Miles Ringsred
+            — (218) 340-3699</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col h-full justify-start items-start">
+      <div class="flex flex-col items-center gap-6">
+        <a class="inline-block border-2 border-[#003629] text-[#003629] px-6 py-2 rounded-lg font-body font-bold text-sm uppercase tracking-widest hover:bg-[#003629] hover:text-white transition-all duration-300"
+          href="https://renter.turbotenant.com/auth/login">TurboTenant Portal</a>
+        <a class="font-['Manrope'] text-sm uppercase tracking-widest text-[#3c2b18] hover:opacity-100 opacity-80 transition-opacity duration-300"
+          href="portal.html">Management portal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tour Modal -->
+  <div id="tour-modal"
+    class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+    <div
+      class="bg-surface p-8 max-w-md w-full mx-4 rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300 relative border border-primary/10">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-2xl font-headline font-bold text-primary">Get Started</h3>
+        <button onclick="closeModal()"
+          class="text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-surface-container">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-8">To be considered, to get more information or to schedule a
+        tour, please fill out this short pre-screener:</p>
+      <a href="https://forms.gle/QoNVbK6SuK7XQsgN8" target="_blank" onclick="closeModal()"
+        class="block w-full text-center bg-primary text-on-primary py-4 rounded-lg font-bold hover:bg-primary-container transition-all shadow-md active:scale-95">
+        Open Pre-Screener
+      </a>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

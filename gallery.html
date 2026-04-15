@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gallery | St. Regis Apartments</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-surface text-on-surface antialiased">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fff8f3]/90 backdrop-blur-md border-b border-primary/5">
+    <div class="flex justify-between items-center px-6 md:px-12 py-3 max-w-full mx-auto">
+      <a href="index.html">
+        <img alt="St. Regis Apartments Logo" class="h-8 md:h-12 w-auto object-contain block" src="images/logo.png">
+      </a>
+      <div class="hidden md:flex space-x-10 font-label text-sm uppercase tracking-[0.15em]">
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="index.html">Home</a>
+        <a class="text-primary border-b-2 border-primary pb-1" href="gallery.html">Gallery</a>
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="details.html">Apartments</a>
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="community.html">Community</a>
+      </div>
+      <div class="flex items-center gap-2 md:gap-4">
+        <button type="button" onclick="openModal()"
+          class="bg-primary text-on-primary px-4 md:px-6 py-2 rounded-lg font-bold text-xs md:text-sm uppercase tracking-widest hover:shadow-lg transition-all duration-300 active:scale-95">
+          Book a Tour
+        </button>
+        <button type="button" aria-expanded="false" aria-label="Toggle mobile menu"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+          class="md:hidden text-primary p-2 hover:bg-surface-container rounded-lg transition-colors">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-[#fff8f3] border-t border-primary/10 shadow-2xl font-label text-sm uppercase tracking-[0.15em] flex flex-col">
+      <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="index.html">Home</a>
+      <a class="text-primary font-bold bg-primary/5 p-4 border-b border-primary/5 pl-6 block"
+        href="gallery.html">Gallery</a>
+      <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="details.html">Apartments</a>
+      <a class="text-on-surface-variant font-semibold p-4 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="community.html">Community</a>
+    </div>
+  </nav>
+  <main class="pt-32 pb-20">
+    <!-- Hero Title -->
+    <header class="px-12 mb-16 max-w-7xl mx-auto">
+      <h1 class="text-6xl md:text-8xl font-headline font-bold text-primary tracking-tighter leading-none">Comfortable
+        Living</h1>
+      <p class="mt-8 text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">Discover the perfect blend of
+        historic 1920s elegance and modern comfort. From the grand brickwork of our exterior to our spacious
+        three-bedroom residences featuring renovated kitchens and historic fireplace mantels, explore every detail of
+        your future home at St. Regis Apartments.</p>
+    </header>
+    <!-- Section 1: Exterior Charm (Bento Layout) -->
+    <section class="px-12 mb-32 max-w-7xl mx-auto">
+      <div class="flex items-baseline justify-between mb-12">
+        <h2 class="text-4xl font-headline text-primary font-bold">Outside &amp; Exterior Charm</h2>
+        <div class="h-px flex-grow mx-8 bg-outline-variant/20 hidden md:block"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto overflow-hidden md:h-[800px]">
+        <div class="md:col-span-8 relative group overflow-hidden rounded-xl h-[400px] md:h-full">
+          <img alt="Historic red brick apartment building facade"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 object-top"
+            src="images/gallery1.jpg">
+          <div class="absolute left-6 bg-surface/90 backdrop-blur-md px-6 py-4 rounded-lg bottom-12">
+            <p class="font-headline text-xl text-primary font-bold">Historical Preservation</p>
+            <p class="font-body text-sm text-secondary">History Meets Modernism</p>
+          </div>
+        </div>
+        <div class="md:col-span-4 grid gap-6 h-full grid-rows-[1fr_minmax(300px,auto)]">
+          <div class="relative group overflow-hidden rounded-xl">
+            <img alt="Stately brick historical apartment building facade"
+              class="w-full h-full object-cover object-[center_25%] transition-transform duration-700 group-hover:scale-105"
+              src="images/gallery2.jpg">
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-center border border-primary/5">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">door_front</span>
+            <h3 class="text-2xl font-headline text-primary mb-2 font-bold">The Entrance</h3>
+            <p class="text-on-surface-variant leading-relaxed">A testament to 1920s craftsmanship, featuring iconic red
+              brick architecture and preserved period details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2: Inside the Units -->
+    <section class="bg-surface-container-low py-32 mb-32">
+      <div class="px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <!-- Image Grid Column -->
+          <div class="lg:col-span-7 order-2 lg:order-1">
+            <div class="grid grid-cols-2 gap-4"><!-- Great Room -->
+              <div class="col-span-2 relative group overflow-hidden rounded-xl shadow-lg aspect-[21/9]">
+                <img alt="Living and dining area overview"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/LivingRoomAngle1.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Living Room angle I&nbsp;</div>
+              </div>
+              <!-- Living Room 1 -->
+              <!-- Living Room 2 -->
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Living room area 2"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/LivingRoomAngle2.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Living Room angle II</div>
+              </div>
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Living room area 1"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/DiningRoomAngle1.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Dining Room angle I</div>
+              </div>
+              <!-- Master Suite -->
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Master suite with hardwood floors and original radiator"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/DiningRoomAngle2.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Dining room angle ii</div>
+              </div>
+              <!-- Bedroom Details (Moved here) -->
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Bright bedroom with hardwood floors and original trim"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/bedroom1.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Bedroom i</div>
+              </div>
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Historic room with high ceilings and large windows"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/Bedroom2.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Bedroom ii</div>
+              </div>
+              <!-- Guest Room -->
+              <!-- Dining Room -->
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Spacious bedroom with hardwood floors and historic radiator"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/Bedroom3.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Bedroom iii</div>
+              </div>
+              <!-- Kitchen -->
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Renovated kitchen"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/kitchen.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Kitchen</div>
+              </div>
+              <!-- Bathroom -->
+              <div class="col-span-2 md:col-span-1 relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                <img alt="Modern bathroom with walk-in shower"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="images/bathroom.jpg">
+                <div
+                  class="absolute top-4 left-4 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary uppercase tracking-widest">
+                  Bathroom</div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Column -->
+          <div class="lg:col-span-5 order-1 lg:order-2 lg:sticky lg:top-40">
+            <h2 class="text-5xl font-headline text-primary mb-8 leading-tight font-bold">Inside the Units: Spacious C3
+              Layout</h2>
+            <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Step inside our spacious three-bedroom
+              residences, where every detail tells a story of elegance and care. These light-filled layouts are anchored
+              by beautifully preserved historic fireplace mantels and rich hardwood floors that flow seamlessly from
+              room to room. Experience the perfect blend of past and present in our bright, renovated modern
+              kitchens—designed to be the heart of your sophisticated urban sanctuary.</p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4 text-primary">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span class="font-body font-semibold">850+ Square Feet of Living Space</span>
+              </li>
+              <li class="flex items-center gap-4 text-primary">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span class="font-body font-semibold">Renovated Modern Kitchens</span>
+              </li>
+              <li class="flex items-center gap-4 text-primary">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span class="font-body font-semibold">Historic Fireplace Mantels</span>
+              </li>
+              <li class="flex items-center gap-4 text-primary">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span class="font-body font-semibold">Walk-in Glass Showers</span>
+              </li>
+              <li class="flex items-center gap-4 text-primary">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span class="font-body font-semibold">Beautiful lake/downtown view</span>
+              </li>
+              <li class="flex items-center gap-4 text-primary">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span class="font-body font-semibold">On-site Laundry Room (Coming soon)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5: Video Walkthrough -->
+    <section class="px-12 mb-32 max-w-7xl mx-auto text-center">
+      <div class="mb-12">
+        <h2 class="text-4xl font-headline text-primary mb-4 font-bold">A Glimpse of Home</h2>
+        <p class="text-on-surface-variant">Experience our premier 3-bedroom residence through a cinematic walkthrough.
+        </p>
+      </div>
+      <div class="relative max-w-5xl mx-auto group">
+        <div
+          class="aspect-video bg-surface-container-highest rounded-2xl flex items-center justify-center overflow-hidden relative shadow-xl">
+          <video controls class="absolute inset-0 w-full h-full object-cover" poster="images/LivingRoomAngle1.jpg">
+            <source src="videos/walkthroughvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div
+            class="hidden md:block absolute top-8 left-8 text-left bg-surface/90 backdrop-blur-md p-6 rounded-xl pointer-events-none z-10">
+            <p class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-1">Touring Unit C3</p>
+            <p class="font-headline text-2xl text-primary">St. Regis Apartments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Final CTA -->
+    <section class="px-12 mb-32 max-w-7xl mx-auto">
+      <div class="bg-surface-container border-2 border-primary/5 rounded-3xl p-16 text-center shadow-sm">
+        <h2 class="text-5xl font-headline text-primary mb-6">See it for yourself.</h2>
+        <p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">Pictures only tell half the story. Schedule
+          an in-person tour of our available 3-bedroom units today.</p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <button
+            class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all">Book
+            a Tour</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="bg-[#fbf2e9] w-full py-20 px-12 border-t border-primary/10 flex flex-col md:flex-row md:justify-evenly items-start gap-16 md:gap-0">
+    <div class="flex flex-col h-full justify-start">
+      <div class="mb-4">
+        <img alt="St. Regis Apartments Logo" class="h-32 md:h-40 w-auto object-contain" src="images/logo.png">
+      </div>
+      <p class="text-[#3c2b18] font-body text-[10px] uppercase tracking-[0.2em] md:pl-20">© 2026 St. Regis Apartments
+        LLC. All
+        rights reserved.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h3 class="text-[#003629] font-headline font-bold text-lg uppercase tracking-widest mb-4">Contact Us</h3>
+      <div class="flex flex-col gap-6 mt-2">
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Administrative</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-snug">Ted Ringsred — (612) 203-3604<br><a
+              class="hover:text-primary transition-colors" href="mailto:ring900@gmail.com">ring900@gmail.com</a></p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">On-Site Manager</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-snug">Fox Ringsred — (612) 666-5962<br><a
+              class="hover:text-primary transition-colors" href="mailto:foxringsred@gmail.com">foxringsred@gmail.com</a>
+          </p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Emergency Contact</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-relaxed">Chris Ringsred — (218) 461-2100<br>Miles Ringsred
+            — (218) 340-3699</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col h-full justify-start items-start">
+      <div class="flex flex-col items-center gap-6">
+        <a class="inline-block border-2 border-[#003629] text-[#003629] px-6 py-2 rounded-lg font-body font-bold text-sm uppercase tracking-widest hover:bg-[#003629] hover:text-white transition-all duration-300"
+          href="https://renter.turbotenant.com/auth/login">TurboTenant Portal</a>
+        <a class="font-['Manrope'] text-sm uppercase tracking-widest text-[#3c2b18] hover:opacity-100 opacity-80 transition-opacity duration-300"
+          href="portal.html">Management portal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tour Modal -->
+  <div id="tour-modal"
+    class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+    <div
+      class="bg-surface p-8 max-w-md w-full mx-4 rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300 relative border border-primary/10">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-2xl font-headline font-bold text-primary">Get Started</h3>
+        <button onclick="closeModal()"
+          class="text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-surface-container">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-8">To be considered, to get more information or to schedule a
+        tour, please fill out this short pre-screener:</p>
+      <a href="https://forms.gle/QoNVbK6SuK7XQsgN8" target="_blank" onclick="closeModal()"
+        class="block w-full text-center bg-primary text-on-primary py-4 rounded-lg font-bold hover:bg-primary-container transition-all shadow-md active:scale-95">
+        Open Pre-Screener
+      </a>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

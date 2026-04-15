@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Apartment Details | St. Regis Apartments</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-fixed-dim">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fff8f3]/90 backdrop-blur-md border-b border-primary/5">
+    <div class="flex justify-between items-center px-6 md:px-12 py-3 max-w-full mx-auto">
+      <a href="index.html">
+        <img alt="St. Regis Apartments Logo" class="h-8 md:h-12 w-auto object-contain block" src="images/logo.png">
+      </a>
+      <div class="hidden md:flex space-x-10 font-label text-sm uppercase tracking-[0.15em]">
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="index.html">Home</a>
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="gallery.html">Gallery</a>
+        <a class="text-primary border-b-2 border-primary pb-1" href="details.html">Apartments</a>
+        <a class="text-on-surface-variant font-semibold hover:text-primary transition-colors duration-300"
+          href="community.html">Community</a>
+      </div>
+      <div class="flex items-center gap-2 md:gap-4">
+        <button type="button" onclick="openModal()"
+          class="bg-primary text-on-primary px-4 md:px-6 py-2 rounded-lg font-bold text-xs md:text-sm uppercase tracking-widest hover:shadow-lg transition-all duration-300 active:scale-95">
+          Book a Tour
+        </button>
+        <button type="button" aria-expanded="false" aria-label="Toggle mobile menu"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+          class="md:hidden text-primary p-2 hover:bg-surface-container rounded-lg transition-colors">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-[#fff8f3] dark:bg-stone-900 border-t border-primary/10 shadow-2xl font-label text-sm uppercase tracking-[0.15em] flex flex-col">
+      <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="index.html">Home</a>
+      <a class="text-on-surface-variant font-semibold p-4 border-b border-primary/5 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="gallery.html">Gallery</a>
+      <a class="text-primary font-bold bg-primary/5 p-4 border-b border-primary/5 pl-6 block"
+        href="details.html">Apartments</a>
+      <a class="text-on-surface-variant font-semibold p-4 pl-6 hover:bg-surface-container-low transition-colors block"
+        href="community.html">Community</a>
+    </div>
+  </nav>
+  <main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <!-- Hero Editorial Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
+      <div class="lg:col-span-7">
+        <h1 class="text-5xl md:text-7xl font-headline font-bold text-primary mb-8 leading-tight">St. Regis Suite Details
+          &amp; Requirements</h1>
+        <p class="text-xl text-on-surface-variant max-w-2xl font-body leading-relaxed">
+          Experience the perfect blend of historic charm and modern convenience. Our owner-managed building ensures
+          responsive care and a community-focused atmosphere.
+        </p>
+      </div>
+      <div class="lg:col-span-5 relative">
+        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+          <div class="w-full h-full bg-surface-container-high text-center">
+            <img alt="St. Regis Apartment Interior" class="w-full h-full object-cover"
+              src="images/LivingRoomAngle1.jpg" />
+          </div>
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-8 rounded-lg shadow-xl max-w-xs">
+          <p class="font-headline text-3xl font-bold text-primary">$1,200 – $1,400</p>
+          <p class="font-label text-xs uppercase tracking-widest text-secondary mt-1">Monthly Investment</p>
+        </div>
+      </div>
+    </section>
+    <!-- Bento Grid: Costs & Lease -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <!-- Pricing Card -->
+      <div class="bg-surface-container-low p-10 rounded-xl">
+        <span class="material-symbols-outlined text-primary mb-6 text-3xl">payments</span>
+        <h3 class="text-2xl font-headline font-bold text-primary mb-4">Pricing &amp; Deposit</h3>
+        <div class="space-y-4">
+          <div class="flex justify-between items-end">
+            <span class="text-on-surface-variant font-body">Monthly Rent</span>
+            <span class="font-bold text-on-surface">$1,200 - $1,400</span>
+          </div>
+          <div class="flex justify-between items-end">
+            <span class="text-on-surface-variant font-body">Security Deposit</span>
+            <span class="font-bold text-on-surface">$1,200</span>
+          </div>
+          <div class="flex justify-between items-end">
+            <span class="text-on-surface-variant font-body">Optional Parking</span>
+            <span class="font-bold text-on-surface">$35/mo</span>
+          </div>
+        </div>
+      </div>
+      <!-- Lease Card -->
+      <div class="bg-surface-container-highest p-10 rounded-xl">
+        <span class="material-symbols-outlined text-primary mb-6 text-3xl">calendar_today</span>
+        <h3 class="text-2xl font-headline font-bold text-primary mb-4">Lease Flexibility</h3>
+        <p class="text-on-surface-variant font-body leading-relaxed">
+          We offer standard annual leases with the option for <span class="text-primary font-bold">Month-to-month</span>
+          arrangements for those seeking maximum flexibility.
+        </p>
+      </div>
+      <!-- Pet Policy -->
+      <div class="bg-surface-container-low p-10 rounded-xl border-l-4 border-primary/20">
+        <span class="material-symbols-outlined text-primary mb-6 text-3xl">pets</span>
+        <h3 class="text-2xl font-headline font-bold text-primary mb-4">Pet Policy</h3>
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-[#003629]">check_circle</span>
+            <span class="text-on-surface font-body font-semibold">Cats Accepted ($35/mo)</span>
+          </div>
+          <div class="flex items-center gap-3 opacity-60">
+            <span class="material-symbols-outlined text-error">cancel</span>
+            <span class="text-on-surface font-body">No Dogs at present</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Utilities & Amenities Detail -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+      <!-- Utilities -->
+      <div class="bg-surface-container p-12 rounded-xl">
+        <h2 class="text-3xl font-headline font-bold text-primary mb-8">Utilities &amp; Connectivity</h2>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-lg">
+            <span class="material-symbols-outlined text-primary">wifi</span>
+            <div>
+              <h4 class="font-bold text-primary">Complimentary WiFi</h4>
+              <p class="text-sm text-on-surface-variant">High-speed building-wide internet included.</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 border border-outline-variant/20 rounded-lg">
+              <p class="text-xs font-label uppercase text-secondary mb-1">Building Covers</p>
+              <ul class="text-sm space-y-1 font-semibold text-primary">
+                <li>Water &amp; Sewage</li>
+                <li>Heating</li>
+              </ul>
+            </div>
+            <div class="p-4 border border-outline-variant/20 rounded-lg">
+              <p class="text-xs font-label uppercase text-secondary mb-1">Renter Responsibility</p>
+              <ul class="text-sm space-y-1 font-semibold text-primary">
+                <li>Electricity</li>
+                <li>Optional ISP Upgrades</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modern Amenities List -->
+      <div>
+        <h2 class="text-3xl font-headline font-bold text-primary mb-8">Building Amenities</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-lg">
+            <span class="material-symbols-outlined text-primary">key</span>
+            <span class="font-body text-sm font-medium">Personal Code Keypad Locks</span>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-lg">
+            <span class="material-symbols-outlined text-primary">videocam</span>
+            <span class="font-body text-sm font-medium">Security Cameras</span>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-lg">
+            <span class="material-symbols-outlined text-primary">kitchen</span>
+            <span class="font-body text-sm font-medium">Oven, Fridge, Microwave</span>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-lg">
+            <span class="material-symbols-outlined text-primary">delete</span>
+            <span class="font-body text-sm font-medium">On-site Dumpster</span>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-lg">
+            <span class="material-symbols-outlined text-primary">router</span>
+            <span class="font-body text-sm font-medium">Wired for ISP</span>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-secondary-container/30 rounded-lg relative overflow-hidden">
+            <span class="material-symbols-outlined text-secondary">local_laundry_service</span>
+            <span class="font-body text-sm font-medium">Laundry Room</span>
+            <span
+              class="absolute right-3 top-3 bg-primary text-[10px] text-on-primary px-2 py-0.5 rounded-full font-bold uppercase tracking-tighter">Coming
+              Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Management Section -->
+    <section class="bg-primary text-on-primary p-12 rounded-xl relative overflow-hidden">
+      <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-12">
+        <div class="max-w-xl">
+          <h2 class="text-3xl font-headline font-bold mb-4">Direct Management, Genuine Care</h2>
+          <p class="text-on-primary/80 font-body text-lg leading-relaxed">
+            This building is owner-managed for maximum responsiveness. We take pride in our property and our residents.
+            For peace of mind, an on-site manager is available for emergency support 24/7.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 w-full md:w-auto">
+          <button onclick="openModal()"
+            class="bg-surface-container-lowest text-primary font-bold px-10 py-4 rounded-lg hover:bg-white transition-all transform hover:-translate-y-1">Schedule
+            a Viewing</button>
+        </div>
+      </div>
+      <!-- Decorative circle -->
+      <div class="absolute -right-24 -bottom-24 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-50"></div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="bg-[#fbf2e9] w-full py-20 px-12 border-t border-primary/10 flex flex-col md:flex-row md:justify-evenly items-start gap-16 md:gap-0">
+    <div class="flex flex-col h-full justify-start">
+      <div class="mb-4">
+        <img alt="St. Regis Apartments Logo" class="h-32 md:h-40 w-auto object-contain" src="images/logo.png">
+      </div>
+      <p class="text-[#3c2b18] font-body text-[10px] uppercase tracking-[0.2em] md:pl-20">© 2026 St. Regis Apartments
+        LLC. All
+        rights reserved.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h3 class="text-[#003629] font-headline font-bold text-lg uppercase tracking-widest mb-4">Contact Us</h3>
+      <div class="flex flex-col gap-6 mt-2">
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Administrative</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-snug">Ted Ringsred — (612) 203-3604<br><a
+              class="hover:text-primary transition-colors" href="mailto:ring900@gmail.com">ring900@gmail.com</a></p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">On-Site Manager</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-snug">Fox Ringsred — (612) 666-5962<br><a
+              class="hover:text-primary transition-colors" href="mailto:foxringsred@gmail.com">foxringsred@gmail.com</a>
+          </p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-[#003629] font-bold text-[10px] uppercase tracking-widest">Emergency Contact</p>
+          <p class="text-[#3c2b18] font-body text-sm leading-relaxed">Chris Ringsred — (218) 461-2100<br>Miles Ringsred
+            — (218) 340-3699</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col h-full justify-start items-start">
+      <div class="flex flex-col items-center gap-6">
+        <a class="inline-block border-2 border-[#003629] text-[#003629] px-6 py-2 rounded-lg font-body font-bold text-sm uppercase tracking-widest hover:bg-[#003629] hover:text-white transition-all duration-300"
+          href="https://renter.turbotenant.com/auth/login">TurboTenant Portal</a>
+        <a class="font-['Manrope'] text-sm uppercase tracking-widest text-[#3c2b18] hover:opacity-100 opacity-80 transition-opacity duration-300"
+          href="portal.html">Management portal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tour Modal -->
+  <div id="tour-modal"
+    class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+    <div
+      class="bg-surface p-8 max-w-md w-full mx-4 rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300 relative border border-primary/10">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-2xl font-headline font-bold text-primary">Get Started</h3>
+        <button onclick="closeModal()"
+          class="text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-surface-container">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-8">To be considered, to get more information or to schedule a
+        tour, please fill out this short pre-screener:</p>
+      <a href="https://forms.gle/QoNVbK6SuK7XQsgN8" target="_blank" onclick="closeModal()"
+        class="block w-full text-center bg-primary text-on-primary py-4 rounded-lg font-bold hover:bg-primary-container transition-all shadow-md active:scale-95">
+        Open Pre-Screener
+      </a>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
